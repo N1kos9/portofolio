@@ -11,7 +11,7 @@ function Contact() {
           <h3>Get in touch</h3>
           <h1>
             Have a question, an idea or a project in mind? <br />
-            Don't hesitate to contact!
+            Don&apos;t hesitate to contact!
           </h1>
           <div className={styles.social}>
             <a href="mailto:onkl3p@gmail.com" className={styles.mail}>

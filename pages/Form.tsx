@@ -82,9 +82,9 @@ function ContactForm() {
       <div className="error-btn">
         {
           error &&
-            error.map((e) => (
+            error.map((e, index) => (
               <div>
-                <p key={e}>{e}</p>
+                <p key={index}>{e}</p>
               </div>
             ))
           // style={ `${success ? 'sent message' : 'error'}` }
