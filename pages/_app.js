@@ -62,8 +62,10 @@ const App = ({ Component, pageProps }) => {
       load.play();
     } else {
       width1++;
-      document.getElementById("barc").style.width = width1 + "%";
-      document.getElementById("percent").innerHTML = width1 + "%";
+      if (typeof document !== "undefined") {
+        document.getElementById("barc").style.width = width1 + "%";
+        document.getElementById("percent").innerHTML = width1 + "%";
+      }
     }
   }
 
