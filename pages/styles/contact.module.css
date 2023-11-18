@@ -1,0 +1,83 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main__container {
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  background-color: rgb(11, 11, 11);
+  padding: 0 3%;
+}
+.main__container h3 {
+  color: white;
+  margin-top: 5rem;
+  font-weight: 500;
+}
+.main__container h1 {
+  color: white;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.main__container .social a {
+  color: white;
+  list-style: none;
+  display: flex;
+  padding-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  width: fit-content;
+  border-radius: 3rem;
+  padding: 1.2rem 2.5rem 1.5rem 2.5rem;
+  font-size: 1rem;
+  gap: 1rem;
+}
+.main__container .social .mail {
+  padding: 1.2rem 4.2rem 1.5rem 4.2rem;
+  transition: 0.42s;
+}
+.main__container .social .mail:hover {
+  background-color: rgba(255, 255, 255, 0.846);
+  color: black;
+}
+.social {
+  margin-top: 10rem;
+}
+.gitNlink {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 10px;
+}
+.gitNlink a {
+  transition: 0.42s;
+}
+.gitNlink a:hover {
+  background-color: rgba(255, 255, 255, 0.846);
+  color: black;
+}
+@media (max-width: 1100px) {
+  .main__container h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .social {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .main__container h1 {
+    font-size: 2.5rem;
+  }
+}

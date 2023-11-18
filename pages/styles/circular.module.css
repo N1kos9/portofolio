@@ -1,0 +1,68 @@
+.rotateText {
+  cursor: pointer;
+  margin-top: 2rem;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/circle-star.svg");
+  background-size: cover;
+  background-position: center;
+}
+.circularContainer {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  padding: 1.25rem;
+  animation: all 1s;
+}
+.arrow {
+  color: white;
+  position: absolute;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  transition: 0.42s ease;
+}
+.circularContainer:hover .arrow {
+  margin-left: 20px;
+}
+.grant {
+  width: 151px;
+  height: 158px;
+  animation: spining 15s linear infinite;
+}
+
+@keyframes spining {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 600px) {
+  .circularContainer {
+    left: 0;
+    bottom: 12rem;
+  }
+  .rotateText {
+    width: 155px;
+    height: 155px;
+  }
+  .grant {
+    width: 137px;
+    height: 137px;
+  }
+}
+@media (max-width: 300px) {
+  .rotateText {
+    width: 145px;
+    height: 145px;
+  }
+  .grant {
+    width: 127px;
+    height: 127px;
+  }
+  .circularContainer {
+    bottom: 5rem;
+  }
+}
