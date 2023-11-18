@@ -1,7 +1,7 @@
 import Header from "./header";
 import Head from "next/head";
 
-export default function Page({ children }) {
+export default function Page({ children }: React.PropsWithChildren) {
   return (
     <>
       <main>
