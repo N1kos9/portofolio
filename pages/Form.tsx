@@ -75,8 +75,7 @@ function ContactForm() {
         </div>
 
         <button type="submit" className="send">
-          {" "}
-          Send{" "}
+          Send
         </button>
       </form>
 
@@ -85,7 +84,7 @@ function ContactForm() {
           error &&
             error.map((e) => (
               <div>
-                <p>{e}</p>
+                <p key={e}>{e}</p>
               </div>
             ))
           // style={ `${success ? 'sent message' : 'error'}` }
