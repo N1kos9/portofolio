@@ -1,8 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
-// import circle from '@/public/circle-star.svg'
 import styles from "@/pages/styles/circular.module.css";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 function circular() {
   return (

@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef, useEffect } from "react";
 import "@/pages/styles/index.css";
 import gsap from "gsap";
@@ -68,15 +66,6 @@ const App = ({ Component, pageProps }) => {
       }
     }
   }
-
-  // if (typeof window === "object") {
-  //   window.addEventListener("load", (e) => {
-  //     loading();
-  //   })
-  //   console.log(window.addEventListener('load', (e) => {
-  //     loading()
-  //   }))
-  //   }
 
   loading();
 
