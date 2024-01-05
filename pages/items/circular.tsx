@@ -16,7 +16,7 @@ function circular() {
               className={styles.grant}
               layout="fixed"
             />
-            <BsArrowRight href="#about" className={styles.arrow} />
+            <BsArrowRight href="about" className={styles.arrow} />
           </div>
         </Link>
       </div>

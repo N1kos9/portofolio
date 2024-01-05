@@ -19,7 +19,6 @@ function Home() {
                 className={styles.imgRingOne}
                 src={RingImage}
                 alt="ring image one"
-                layout="fixed"
               />
             </div>
             <div className={styles.ring}>
@@ -27,7 +26,6 @@ function Home() {
                 className={styles.imgRingTwo}
                 src={RingImage}
                 alt="ring image two"
-                layout="fixed"
               />
             </div>
           </h1>

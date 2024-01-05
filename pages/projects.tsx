@@ -19,16 +19,16 @@ function projects() {
             <Link href="/">01</Link>
           </p>
           <p className={Styles.numbers}>
-            <Link href="/about">02</Link>
+            <Link href="about">02</Link>
           </p>
 
           <p className={Styles.numbers}>
-            <Link href="/projects">03</Link>
+            <Link href="projects">03</Link>
           </p>
           <div className={Styles.line}></div>
 
           <p className={Styles.numbers}>
-            <Link href="/contact">04</Link>
+            <Link href="contact">04</Link>
           </p>
         </div>
         <h1>Some of my works</h1>
