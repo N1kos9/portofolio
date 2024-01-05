@@ -17,7 +17,6 @@ export default function Page({ children }: React.PropsWithChildren) {
             name="description"
             content="Front-end developer, freelancer and your dream maker"
           />
-          <link rel="stylesheet" href="navbar.css" />
         </Head>
         <Header />
         {children}

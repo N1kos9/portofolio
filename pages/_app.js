@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "@/pages/styles/index.css";
 import gsap from "gsap";
 import { useRouter } from "next/router";
