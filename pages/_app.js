@@ -67,7 +67,7 @@ const App = ({ Component, pageProps }) => {
   //   }
   // }
 
-  loading();
+  // loading();
 
   return (
     <>
@@ -104,6 +104,7 @@ const App = ({ Component, pageProps }) => {
           </div>
         </div>
       </div> */}
+      <Component {...pageProps} />
     </>
   );
 };
