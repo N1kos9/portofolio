@@ -10,7 +10,12 @@ function circular() {
       <div className={styles.circularContainer}>
         <Link aria-label="anything" href="/about">
           <div className={styles.rotateText}>
-            <Image src={Img} alt="round about text" className={styles.grant} />
+            <Image
+              src={Img}
+              alt="round about text"
+              className={styles.grant}
+              layout="fixed"
+            />
             <BsArrowRight href="#about" className={styles.arrow} />
           </div>
         </Link>
