@@ -10,4 +10,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextCofig;
+module.exports = nextConfig;
