@@ -15,7 +15,62 @@
   color: white;
   opacity: 0.7;
 }
-.work {
+.projectSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  border-radius: 2rem;
+  gap: 3rem;
+  color: white;
+  margin-top: 5rem;
+}
+.interContent {
+  display: flex;
+  flex-direction: column;
+}
+.interContent img {
+  border-radius: 1rem;
+  max-height: 100%;
+  max-width: 100%;
+}
+.tehnoUsed {
+  display: flex;
+  flex-direction: row;
+}
+.tehnoUsed p {
+  border-radius: 0.5rem;
+  background-color: rgba(47, 47, 47, 0.851);
+  padding: 0 0.5rem 0;
+  margin-top: 0.8rem;
+  margin-left: 0.5rem;
+}
+.nameWork {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 1100px) {
+  .projects {
+    padding: 0 2%;
+  }
+  .projects h1 {
+    text-align: center;
+  }
+  .projects h3 {
+    text-align: center;
+  }
+
+  .projectSection {
+    grid-template-columns: 1fr;
+  }
+  .tehnoUsed {
+    justify-content: center;
+  }
+  .nameWork {
+    text-align: center;
+  }
+}
+/* .work {
   padding: 0 7%;
   margin-top: 10rem;
 }
@@ -99,7 +154,7 @@
 }
 .thirdElem div {
   width: 100%;
-}
+} */
 .counting {
   display: flex;
   color: white;
@@ -120,7 +175,7 @@
   margin-left: 1rem;
   cursor: pointer;
 }
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
   .firstElem,
   .secondElem,
   .thirdElem {
@@ -133,7 +188,7 @@
     max-height: 100%;
     max-width: 100%;
   }
-}
+} */
 @media (max-width: 600px) {
   .line {
     display: none;

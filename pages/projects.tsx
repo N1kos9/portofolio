@@ -34,76 +34,52 @@ function projects() {
         </div>
         <h1>Some of my works</h1>
         <h3>Each of the project is unique piece of my development</h3>
-        <div className={Styles.work}>
-          <div className={Styles.firstElem}>
-            <Image src={ImgOne} alt="Introductive page" />
-            <div>
-              <h2>Introductive page</h2>
-              <p>Modern landing page </p>
-              <h4>
-                React, Vite, Tailwind, <br /> Framer Motion
-              </h4>
-              <div className={Styles.files}>
-                <a
-                  href="https://github.com/N1kos9/landing-page"
-                  target="_blank"
-                >
-                  <span>
-                    Code <AiFillGithub className={Styles.icon} />
-                  </span>
-                </a>
-                <a
-                  href="https://landing-page-mocha-tau.vercel.app/"
-                  target="_blank"
-                >
-                  <span>
-                    Demo <MdOpenInBrowser className={Styles.icon} />
-                  </span>
-                </a>
-              </div>
+
+        <div className={Styles.projectSection}>
+          <div className={Styles.interContent}>
+            <img src="./modern.png" alt="" />
+            <div className={Styles.tehnoUsed}>
+              <p>React</p>
+              <p className={Styles.secondText}>Tailwind</p>
+              <p>Vite</p>
+              <p>Framer motion</p>
+            </div>
+            <div className={Styles.nameWork}>
+              <h4>Detailed description of myself</h4>
             </div>
           </div>
-          <div className={Styles.secondElem}>
-            <div>
-              <h2>Seos</h2>
-              <p>Services place</p>
-              <h4>React, Vite, Aos</h4>
-              <div className={Styles.files}>
-                <a href="https://github.com/N1kos9/Seos" target="_blank">
-                  <span>
-                    Code <AiFillGithub className={Styles.icon} />
-                  </span>
-                </a>
-                <a
-                  href="https://seos-one.vercel.app/?vercelToolbarCode=WUYzfN84k-6cw1Q"
-                  target="_blank"
-                >
-                  <span>
-                    Demo <MdOpenInBrowser className={Styles.icon} />
-                  </span>
-                </a>
-              </div>
+
+          <div className={Styles.interContent}>
+            <img src="./seos.png" alt="" />
+            <div className={Styles.tehnoUsed}>
+              <p>React</p>
+              <p className={Styles.secondText}>Vite</p>
+              <p>Aos</p>
             </div>
-            <Image src={ImgTwo} alt="Seos" />
+            <div className={Styles.nameWork}>
+              <h4>Multi service place</h4>
+            </div>
           </div>
-          <div className={Styles.thirdElem}>
-            <Image src={ImgThree} alt="Cryptoz" />
-            <div>
-              <h2>Cryptoz</h2>
-              <p>Crypto landing page</p>
-              <h4>React, Vite</h4>
-              <div className={Styles.files}>
-                <a href="https://github.com/N1kos9/CryptoToz" target="_blank">
-                  <span>
-                    Code <AiFillGithub className={Styles.icon} />
-                  </span>
-                </a>
-                <a href="https://crypto-toz.vercel.app/" target="_blank">
-                  <span>
-                    Demo <MdOpenInBrowser className={Styles.icon} />
-                  </span>
-                </a>
-              </div>
+
+          <div className={Styles.interContent}>
+            <img src="./cryptoz.png" alt="" />
+            <div className={Styles.tehnoUsed}>
+              <p>React</p>
+              <p className={Styles.secondText}>Vite</p>
+            </div>
+            <div className={Styles.nameWork}>
+              <h4>Blockchain landpage</h4>
+            </div>
+          </div>
+
+          <div className={Styles.interContent}>
+            <img src="./modern.png" alt="" />
+            <div className={Styles.tehnoUsed}>
+              <p>React</p>
+              <p className={Styles.secondText}>Tailwind</p>
+            </div>
+            <div className={Styles.nameWork}>
+              <h4>Description of Nikos</h4>
             </div>
           </div>
         </div>
