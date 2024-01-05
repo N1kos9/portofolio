@@ -7,67 +7,67 @@ import { motion, AnimatePresence } from "framer-motion";
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
 
-  // const load = gsap.timeline({
-  //   paused: "true",
-  // });
-  // let loader = useRef(null);
-  // let progress = useRef(null);
-  // let percent = useRef(null);
-  // // let container = useRef(null)
-  // let bar = useRef(null);
-  // let barc = useRef(null);
+  const load = gsap.timeline({
+    paused: "true",
+  });
+  let loader = useRef(null);
+  let progress = useRef(null);
+  let percent = useRef(null);
+  // let container = useRef(null)
+  let bar = useRef(null);
+  let barc = useRef(null);
 
-  // useEffect(() => {
-  //   load.to([percent, bar], {
-  //     duration: 0.2,
-  //     opacity: 0,
-  //     zIndex: -1,
-  //   });
-  //   load.to(progress, {
-  //     duration: 0.8,
-  //     width: "0%",
-  //   });
-  //   load.to(
-  //     loader,
-  //     {
-  //       // visibility: 'hidden',
-  //       duration: 1.5,
-  //       y: "-150%",
-  //       // zIndex: -1
-  //     },
-  //     "-=.2"
-  //   );
-  //   load.to("container", {
-  //     // visibility: 'visible',
-  //     skewY: 10,
-  //     opacity: 1,
-  //     y: "10%",
-  //     stagger: {
-  //       amount: 0.4,
-  //     },
-  //   });
-  // }, [percent, bar, progress, loader, barc, load]);
+  useEffect(() => {
+    load.to([percent, bar], {
+      duration: 0.2,
+      opacity: 0,
+      zIndex: -1,
+    });
+    load.to(progress, {
+      duration: 0.8,
+      width: "0%",
+    });
+    load.to(
+      loader,
+      {
+        // visibility: 'hidden',
+        duration: 1.5,
+        y: "-150%",
+        // zIndex: -1
+      },
+      "-=.2"
+    );
+    load.to("container", {
+      // visibility: 'visible',
+      skewY: 10,
+      opacity: 1,
+      y: "10%",
+      stagger: {
+        amount: 0.4,
+      },
+    });
+  }, [percent, bar, progress, loader, barc, load]);
 
-  // var id;
-  // var width1 = 1;
+  var id;
+  var width1 = 1;
 
-  // function loading() {
-  //   id = setInterval(frame, 20);
-  // }
-  // function frame() {
-  //   if (width1 >= 100) {
-  //     clearInterval(id);
-  //     load.play();
-  //   } else {
-  //     width1++;
-  //     if (typeof document !== "undefined") {
-  //       document.getElementById("barc").style.width = width1 + "%";
-  //       document.getElementById("percent").innerHTML = width1 + "%";
-  //     }
-  //   }
-  // }
+  function loading() {
+    id = setInterval(frame, 20);
+  }
+  function frame() {
+    if (width1 >= 100) {
+      clearInterval(id);
+      load.play();
+    } else {
+      width1++;
+      if (typeof document !== "undefined") {
+        document.getElementById("barc").style.width = width1 + "%";
+        document.getElementById("percent").innerHTML = width1 + "%";
+      }
+    }
+  }
 
-  // loading();
+  loading();
 
   return (
     <>
@@ -92,7 +92,7 @@ const App = ({ Component, pageProps }) => {
         </motion.div>
       </AnimatePresence>
 
-      {/*<div>
+      <div>
         <div className="loader" ref={(el) => (loader = el)}>
           <div className="progress" ref={(el) => (progress = el)}>
             <div id="percent" ref={(el) => (percent = el)}>
@@ -103,7 +103,7 @@ const App = ({ Component, pageProps }) => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
