@@ -1,11 +1,11 @@
 import Page from "@/component/page";
 import Styles from "@/pages/styles/projects.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 import { AiFillGithub } from "react-icons/ai";
 import { MdOpenInBrowser } from "react-icons/md";
 
-import Image from "next/image";
 import ImgOne from "@/public/modern.png";
 import ImgTwo from "@/public/seos.png";
 import ImgThree from "@/public/cryptoz.png";
@@ -37,7 +37,7 @@ function projects() {
 
         <div className={Styles.projectSection}>
           <div className={Styles.interContent}>
-            <img src="./modern.png" alt="" />
+            <Image src="./modern.png" alt="modern" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Tailwind</p>
@@ -50,7 +50,7 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <img src="./seos.png" alt="" />
+            <Image src="./seos.png" alt="seos" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Vite</p>
@@ -62,7 +62,7 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <img src="./cryptoz.png" alt="" />
+            <Image src="./cryptoz.png" alt="cryptoz" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Vite</p>
@@ -73,7 +73,7 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <img src="./swipe.png" alt="" />
+            <Image src="./swipe.png" alt="swipe" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Tailwind</p>

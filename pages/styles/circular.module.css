@@ -1,6 +1,5 @@
 .rotateText {
   cursor: pointer;
-  margin-top: 2rem;
   position: relative;
   width: 175px;
   height: 175px;
@@ -15,7 +14,6 @@
   position: absolute;
   bottom: 5rem;
   right: 5rem;
-  padding: 1.25rem;
   animation: all 1s;
 }
 .arrow {

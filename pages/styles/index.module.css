@@ -29,10 +29,7 @@
 }
 
 .ring {
-  margin: 0%;
-  padding: 0%;
   position: absolute;
-  z-index: 2;
   width: 55%;
   left: 70%;
   top: -30%;
