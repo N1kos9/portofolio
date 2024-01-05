@@ -35,13 +35,13 @@ function Home() {
         </div>
         <Circular />
         <div className={styles.counting}>
-          <p className={styles.numbers}>
-            <Link href="">01</Link>
-          </p>
+          <Link href="">
+            <p className={styles.numbers}>01</p>
+          </Link>
           <div className={styles.line}></div>
-          <p className={styles.numbers}>
-            <Link href="about">02</Link>
-          </p>
+          <Link href="about">
+            <p>02</p>
+          </Link>
           <p className={styles.numbers}>
             <Link href="projects">03</Link>
           </p>
