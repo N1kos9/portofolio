@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 
 const App = ({ Component, pageProps }) => {
-  // const router = useRouter();
+  const router = useRouter();
 
   // const load = gsap.timeline({
   //   paused: "true",
@@ -71,7 +71,7 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         <motion.div key={router.pathname}>
           <Component {...pageProps} />
 
@@ -92,7 +92,7 @@ const App = ({ Component, pageProps }) => {
         </motion.div>
       </AnimatePresence>
 
-      <div>
+      {/*<div>
         <div className="loader" ref={(el) => (loader = el)}>
           <div className="progress" ref={(el) => (progress = el)}>
             <div id="percent" ref={(el) => (percent = el)}>
@@ -104,7 +104,6 @@ const App = ({ Component, pageProps }) => {
           </div>
         </div>
       </div> */}
-      <Component {...pageProps} />
     </>
   );
 };
