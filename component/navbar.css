@@ -159,7 +159,6 @@ ul.nav-links li a {
 }
 @media (max-width: 600px) {
   .navbar {
-    top: -10%;
     right: 50%;
     transform: translate(50%, 50%);
   }
