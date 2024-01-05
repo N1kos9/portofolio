@@ -1,7 +1,6 @@
 import Link from "next/link";
 import "./navbar.css";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);

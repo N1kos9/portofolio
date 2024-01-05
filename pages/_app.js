@@ -46,7 +46,7 @@ const App = ({ Component, pageProps }) => {
         amount: 0.4,
       },
     });
-  });
+  }, [percent, bar, progress, loader, barc, load]);
 
   var id;
   var width1 = 1;
