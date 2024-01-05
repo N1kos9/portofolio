@@ -3,12 +3,12 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "maxLambdaSize": "25mb",
+        "developmentCommand": "npm run dev"
+      }
     }
   ],
-  "routes": [{ "src": "^/.*", "dest": "package.json" }],
-  "env": {
-    "NODE_ENV": "development"
-  },
-  "dev": true
+  "routes": [{ "src": "^/.*", "dest": "package.json" }]
 }
