@@ -1,8 +1,14 @@
 import Page from "@/component/page";
 import Styles from "@/pages/styles/projects.module.css";
 import Link from "next/link";
+
 import { AiFillGithub } from "react-icons/ai";
 import { MdOpenInBrowser } from "react-icons/md";
+
+import Image from "next/image";
+import ImgOne from "@/public/modern.png";
+import ImgTwo from "@/public/seos.png";
+import ImgThree from "@/public/cryptoz.png";
 
 function projects() {
   return (
@@ -30,7 +36,7 @@ function projects() {
         <h3>Each of the project is unique piece of my development</h3>
         <div className={Styles.work}>
           <div className={Styles.firstElem}>
-            <img src="./modern.png" alt="" />
+            <Image src={ImgOne} alt="Introductive page" />
             <div>
               <h2>Introductive page</h2>
               <p>Modern landing page </p>
@@ -78,10 +84,10 @@ function projects() {
                 </a>
               </div>
             </div>
-            <img src="./seos.png" alt="" />
+            <Image src={ImgTwo} alt="Seos" />
           </div>
           <div className={Styles.thirdElem}>
-            <img src="./cryptoz.png" alt="" />
+            <Image src={ImgThree} alt="Cryptoz" />
             <div>
               <h2>Cryptoz</h2>
               <p>Crypto landing page</p>
