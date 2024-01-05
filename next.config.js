@@ -8,6 +8,9 @@ const nextConfig = {
   experimental: {
     unstable_runtimeJS: false,
   },
+  cssLoaderOptions: {
+    url: false,
+  },
 };
 
 module.exports = nextConfig;
