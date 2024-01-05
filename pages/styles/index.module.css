@@ -70,6 +70,7 @@
   position: absolute;
   top: 50%;
   vertical-align: middle;
+  text-wrap: balance;
 }
 .bigText {
   color: white;
@@ -77,6 +78,7 @@
   line-height: 1;
   text-align: left;
   opacity: 0.7;
+  text-wrap: balance;
 }
 .mistery {
   color: white;
@@ -86,10 +88,11 @@
   padding-top: 1.25rem;
   opacity: 0.7;
   text-align: left;
+  text-wrap: balance;
 }
 @media (max-width: 1600px) {
   .background {
-    padding: 0 5%;
+    padding: 0 2%;
   }
   .bigText {
     font-size: 4rem;
@@ -126,10 +129,18 @@
     text-align: center;
   }
   .bigText {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
   .mistery {
     font-size: 1rem;
+    text-align: center;
+  }
+  .copyright {
+    bottom: 4;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
   }
 }
 @media (max-width: 400px) {

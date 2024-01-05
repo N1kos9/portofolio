@@ -41,8 +41,11 @@
 }
 @media (max-width: 600px) {
   .circularContainer {
-    left: 0;
     bottom: 12rem;
+    top: 60%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
   }
   .rotateText {
     width: 155px;
@@ -64,5 +67,6 @@
   }
   .circularContainer {
     bottom: 5rem;
+    top: 70%;
   }
 }

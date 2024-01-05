@@ -73,13 +73,14 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <img src="./modern.png" alt="" />
+            <img src="./swipe.png" alt="" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Tailwind</p>
+              <p>NextJS</p>
             </div>
             <div className={Styles.nameWork}>
-              <h4>Description of Nikos</h4>
+              <h4>One page, classified as Swipe</h4>
             </div>
           </div>
         </div>
