@@ -59,7 +59,7 @@ function Home() {
         </div>
 
         <div className={styles.copyright}>
-          © 2023 by Nikos. All rights reserved
+          © 2023 by Nikos. All rights reserved.
         </div>
       </main>
     </>
