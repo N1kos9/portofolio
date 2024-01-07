@@ -70,91 +70,6 @@
     text-align: center;
   }
 }
-/* .work {
-  padding: 0 7%;
-  margin-top: 10rem;
-}
-.work h2 {
-  text-align: center;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 2rem;
-}
-.work p {
-  color: white;
-  font-size: 1.4rem;
-  padding: 2rem;
-  opacity: 0.8;
-}
-.work h4 {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.work h5 {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.files {
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: flex-start;
-}
-.files span {
-  display: flex;
-  align-items: flex-start;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-.icon {
-  margin-top: 5px;
-}
-.work img {
-  max-height: 50%;
-  max-width: 50%;
-  border-radius: 20px;
-}
-.logoTwo {
-  margin-left: 1rem;
-}
-.firstElem {
-  display: flex;
-  padding: 1rem;
-  border: 1px solid white;
-  text-align: center;
-  justify-content: center;
-}
-.firstElem div {
-  width: 100%;
-}
-.secondElem {
-  display: flex;
-  margin-top: 5rem;
-  text-align: center;
-  border: 1px solid white;
-  padding: 1rem;
-}
-.secondElem div {
-  width: 100%;
-}
-.thirdElem {
-  display: flex;
-  margin-top: 5rem;
-  text-align: center;
-  border: 1px solid white;
-  padding: 1rem;
-  margin-bottom: 5rem;
-}
-.thirdElem div {
-  width: 100%;
-} */
 .counting {
   display: flex;
   color: white;
@@ -175,20 +90,6 @@
   margin-left: 1rem;
   cursor: pointer;
 }
-/* @media (max-width: 1100px) {
-  .firstElem,
-  .secondElem,
-  .thirdElem {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-start;
-  }
-  .work img {
-    max-height: 100%;
-    max-width: 100%;
-  }
-} */
 @media (max-width: 600px) {
   .line {
     display: none;
