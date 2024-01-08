@@ -2,13 +2,6 @@ import Page from "@/component/page";
 import Styles from "@/pages/styles/projects.module.css";
 import Link from "next/link";
 
-import { AiFillGithub } from "react-icons/ai";
-import { MdOpenInBrowser } from "react-icons/md";
-
-import ImgOne from "@/public/modern.png";
-import ImgTwo from "@/public/seos.png";
-import ImgThree from "@/public/cryptoz.png";
-
 function projects() {
   return (
     <>

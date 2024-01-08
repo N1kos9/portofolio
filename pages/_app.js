@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import "@/pages/styles/index.css";
 import gsap from "gsap";
 import { useRouter } from "next/router";
@@ -13,7 +13,6 @@ const App = ({ Component, pageProps }) => {
   let loader = useRef(null);
   let progress = useRef(null);
   let percent = useRef(null);
-  // let container = useRef(null)
   let bar = useRef(null);
   let barc = useRef(null);
 
@@ -30,15 +29,12 @@ const App = ({ Component, pageProps }) => {
     load.to(
       loader,
       {
-        // visibility: 'hidden',
         duration: 1.5,
         y: "-150%",
-        // zIndex: -1
       },
       "-=.2"
     );
     load.to("container", {
-      // visibility: 'visible',
       skewY: 10,
       opacity: 1,
       y: "10%",

@@ -1,5 +1,4 @@
 "use client";
-// import { BsSend } from "react-icons/bs";
 import { useState } from "react";
 
 function ContactForm() {
@@ -80,15 +79,12 @@ function ContactForm() {
       </form>
 
       <div className="error-btn">
-        {
-          error &&
-            error.map((e, index) => (
-              <div key={index}>
-                <p>{e}</p>
-              </div>
-            ))
-          // style={ `${success ? 'sent message' : 'error'}` }
-        }
+        {error &&
+          error.map((e, index) => (
+            <div key={index}>
+              <p>{e}</p>
+            </div>
+          ))}
       </div>
     </>
   );
