@@ -27,6 +27,7 @@ function projects() {
         <h1>Some of my works</h1>
         <h3>Each of the project is unique piece of my development</h3>
 
+        {/* make on hover links appear while the background gets more blacker, task for tommorow */}
         <div className={Styles.projectSection}>
           <div className={Styles.interContent}>
             <img src="./modern.png" alt="modern" />
