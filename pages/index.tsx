@@ -34,30 +34,6 @@ function Home() {
             Find out what valuable assets I can bring
           </h3>
         </div>
-        <Circular />
-        <div className={styles.counting}>
-          <p className={styles.numbers}>
-            <Link href="" prefetch={false}>
-              01
-            </Link>
-          </p>
-          <div className={styles.line}></div>
-          <p className={styles.numbers}>
-            <Link href="about" prefetch={false}>
-              02
-            </Link>
-          </p>
-          <p className={styles.numbers}>
-            <Link href="projects" prefetch={false}>
-              03
-            </Link>
-          </p>
-          <p className={styles.numbers}>
-            <Link href="contact" prefetch={false}>
-              04
-            </Link>
-          </p>
-        </div>
 
         <div className={styles.copyright}>
           © 2023 by Nikos. All rights reserved.

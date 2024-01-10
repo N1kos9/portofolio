@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "@/pages/styles/index.css";
+import "@/component/navbar.css";
 import { useState } from "react";
 
 function Header() {

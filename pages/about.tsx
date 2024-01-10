@@ -8,22 +8,6 @@ function About() {
     <>
       <main className={aboutStyles.about}>
         <Page />
-        <div className={aboutStyles.counting}>
-          <p className={aboutStyles.numbers}>
-            <Link href="/">01</Link>
-          </p>
-          <p className={aboutStyles.numbers}>
-            <Link href="about">02</Link>
-          </p>
-          <div className={aboutStyles.line}></div>
-
-          <p className={aboutStyles.numbers}>
-            <Link href="projects">03</Link>
-          </p>
-          <p className={aboutStyles.numbers}>
-            <Link href="contact">04</Link>
-          </p>
-        </div>
 
         <div className={aboutStyles.aboutText}>
           <div className={aboutStyles.name}>

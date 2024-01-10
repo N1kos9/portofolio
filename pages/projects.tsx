@@ -7,23 +7,6 @@ function projects() {
     <>
       <Page />
       <main className={Styles.projects}>
-        <div className={Styles.counting}>
-          <p className={Styles.numbers}>
-            <Link href="/">01</Link>
-          </p>
-          <p className={Styles.numbers}>
-            <Link href="about">02</Link>
-          </p>
-
-          <p className={Styles.numbers}>
-            <Link href="projects">03</Link>
-          </p>
-          <div className={Styles.line}></div>
-
-          <p className={Styles.numbers}>
-            <Link href="contact">04</Link>
-          </p>
-        </div>
         <h1>Some of my works</h1>
         <h3>Each of the project is unique piece of my development</h3>
 

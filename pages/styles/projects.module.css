@@ -70,31 +70,3 @@
     text-align: center;
   }
 }
-.counting {
-  display: flex;
-  color: white;
-  align-items: center;
-  padding: 1rem;
-  justify-content: flex-start;
-  padding-top: 3.5rem;
-  opacity: 0.7;
-}
-.line {
-  height: 1px;
-  width: 20%;
-
-  background-color: white;
-}
-.numbers {
-  margin-right: 1rem;
-  margin-left: 1rem;
-  cursor: pointer;
-}
-@media (max-width: 600px) {
-  .line {
-    display: none;
-  }
-  .numbers {
-    display: none;
-  }
-}
