@@ -59,6 +59,9 @@
   .projects h3 {
     text-align: center;
   }
+  .interContent {
+    align-items: center;
+  }
 
   .projectSection {
     grid-template-columns: 1fr;

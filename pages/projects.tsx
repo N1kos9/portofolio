@@ -1,7 +1,8 @@
 import Page from "@/component/page";
 import Styles from "@/pages/styles/projects.module.css";
+import Image from "next/image";
 import Link from "next/link";
-
+Image;
 function projects() {
   return (
     <>
@@ -10,10 +11,9 @@ function projects() {
         <h1>Some of my works</h1>
         <h3>Each of the project is unique piece of my development</h3>
 
-        {/* make on hover links appear while the background gets more blacker, task for tommorow */}
         <div className={Styles.projectSection}>
           <div className={Styles.interContent}>
-            <img src="./modern.png" alt="modern" />
+            <Image src="/modern.png" width={700} height={700} alt="modern" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Tailwind</p>
@@ -26,7 +26,7 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <img src="./seos.png" alt="seos" />
+            <Image src="/seos.png" width={700} height={700} alt="seos" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Vite</p>
@@ -38,7 +38,7 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <img src="./cryptoz.png" alt="cryptoz" />
+            <Image src="/cryptoz.png" width={700} height={700} alt="cryptoz" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Vite</p>
@@ -49,7 +49,7 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <img src="./swipe.png" alt="swipe" />
+            <Image src="/swipe.png" width={700} height={700} alt="swipe" />
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Tailwind</p>
