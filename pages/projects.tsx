@@ -51,14 +51,14 @@ function projects() {
               <Image src="/seos.png" width={700} height={700} alt="seos" />
               <div className={Styles.content}>
                 <a
-                  href="https://landing-page-mocha-tau.vercel.app/"
+                  href="https://seos-one.vercel.app/?vercelToolbarCode=WUYzfN84k-6cw1Q"
                   target="_blank"
                 >
                   <CgWebsite />
                   Demo
                 </a>
                 <a
-                  href="https://github.com/N1kos9/landing-page"
+                  href="https://github.com/N1kos9/Seos"
                   target="_blank"
                   className={Styles.secondLink}
                 >
@@ -86,15 +86,12 @@ function projects() {
                 alt="cryptoz"
               />
               <div className={Styles.content}>
-                <a
-                  href="https://landing-page-mocha-tau.vercel.app/"
-                  target="_blank"
-                >
+                <a href="https://crypto-toz.vercel.app/" target="_blank">
                   <CgWebsite />
                   Demo
                 </a>
                 <a
-                  href="https://github.com/N1kos9/landing-page"
+                  href="https://github.com/N1kos9/CryptoToz"
                   target="_blank"
                   className={Styles.secondLink}
                 >
@@ -116,15 +113,12 @@ function projects() {
             <div className={Styles.image}>
               <Image src="/swipe.png" width={700} height={700} alt="swipe" />
               <div className={Styles.content}>
-                <a
-                  href="https://landing-page-mocha-tau.vercel.app/"
-                  target="_blank"
-                >
+                <a href="https://swipe-tau.vercel.app/" target="_blank">
                   <CgWebsite />
                   Demo
                 </a>
                 <a
-                  href="https://github.com/N1kos9/landing-page"
+                  href="https://github.com/N1kos9/swipe"
                   target="_blank"
                   className={Styles.secondLink}
                 >
