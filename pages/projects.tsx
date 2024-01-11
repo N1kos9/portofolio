@@ -113,7 +113,26 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <Image src="/swipe.png" width={700} height={700} alt="swipe" />
+            <div className={Styles.image}>
+              <Image src="/swipe.png" width={700} height={700} alt="swipe" />
+              <div className={Styles.content}>
+                <a
+                  href="https://landing-page-mocha-tau.vercel.app/"
+                  target="_blank"
+                >
+                  <CgWebsite />
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/N1kos9/landing-page"
+                  target="_blank"
+                  className={Styles.secondLink}
+                >
+                  <FaCode />
+                  Code
+                </a>
+              </div>
+            </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Tailwind</p>
