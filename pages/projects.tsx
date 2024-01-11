@@ -18,11 +18,18 @@ function projects() {
             <div className={Styles.image}>
               <Image src="/modern.png" width={700} height={700} alt="modern" />
               <div className={Styles.content}>
-                <a href="">
+                <a
+                  href="https://landing-page-mocha-tau.vercel.app/"
+                  target="_blank"
+                >
                   <CgWebsite />
                   Demo
                 </a>
-                <a href="" className={Styles.secondLink}>
+                <a
+                  href="https://github.com/N1kos9/landing-page"
+                  target="_blank"
+                  className={Styles.secondLink}
+                >
                   <FaCode />
                   Code
                 </a>
@@ -40,7 +47,26 @@ function projects() {
           </div>
 
           <div className={Styles.interContent}>
-            <Image src="/seos.png" width={700} height={700} alt="seos" />
+            <div className={Styles.image}>
+              <Image src="/seos.png" width={700} height={700} alt="seos" />
+              <div className={Styles.content}>
+                <a
+                  href="https://landing-page-mocha-tau.vercel.app/"
+                  target="_blank"
+                >
+                  <CgWebsite />
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/N1kos9/landing-page"
+                  target="_blank"
+                  className={Styles.secondLink}
+                >
+                  <FaCode />
+                  Code
+                </a>
+              </div>
+            </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Vite</p>
