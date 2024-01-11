@@ -1,7 +1,9 @@
 import Page from "@/component/page";
 import Styles from "@/pages/styles/projects.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import { FaCode } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
+
 Image;
 function projects() {
   return (
@@ -13,7 +15,19 @@ function projects() {
 
         <div className={Styles.projectSection}>
           <div className={Styles.interContent}>
-            <Image src="/modern.png" width={700} height={700} alt="modern" />
+            <div className={Styles.image}>
+              <Image src="/modern.png" width={700} height={700} alt="modern" />
+              <div className={Styles.content}>
+                <a href="">
+                  <CgWebsite />
+                  Demo
+                </a>
+                <a href="" className={Styles.secondLink}>
+                  <FaCode />
+                  Code
+                </a>
+              </div>
+            </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
               <p className={Styles.secondText}>Tailwind</p>
