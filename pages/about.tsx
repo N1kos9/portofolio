@@ -23,7 +23,7 @@ function About() {
               <p>Simplicity</p>
             </div>
             <div className={aboutStyles.thingsIUse}>
-              <h1>Things I use</h1>
+              <h1>Technology I use</h1>
               <div className="react">
                 <p>1</p>
                 <h2>react.js</h2>
@@ -43,7 +43,7 @@ function About() {
               <div className="framerMotion">
                 <p>3</p>
                 <h2>framer motion</h2>
-                <h3>I use it whenever I have some animation to made</h3>
+                <h3>I use it whenever I have some animation to make</h3>
               </div>
               <div className="cssFrameworks">
                 <p>4</p>
@@ -71,9 +71,9 @@ function About() {
             <div className={aboutStyles.interests}>
               <h1>Interests</h1>
               <h3>Chess</h3>
-              <h3>Self-improvement</h3>
+              <h3>Psychology</h3>
               <h3>Reading</h3>
-              <h3>Learning</h3>
+              <h3>Piano</h3>
             </div>
           </div>
         </div>
