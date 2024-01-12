@@ -110,4 +110,27 @@
   .nameWork {
     text-align: center;
   }
+  .content {
+    margin-top: 1rem;
+    position: initial;
+    display: initial;
+    justify-content: initial;
+    align-items: initial;
+    justify-content: center;
+    opacity: 1;
+  }
+  .content a {
+    background-color: rgba(47, 47, 47, 0.588);
+    border-radius: 0.5rem;
+    padding: 0.3rem 0 0.3rem 0;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .secondLink {
+    margin-left: 0;
+  }
+  .content > * {
+    transform: translateY(0px);
+  }
 }
