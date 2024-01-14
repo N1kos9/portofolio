@@ -86,12 +86,12 @@ function projects() {
                 alt="cryptoz"
               />
               <div className={Styles.content}>
-                <a href="https://crypto-toz.vercel.app/" target="_blank">
+                <a href="https://cryptoz-psi.vercel.app" target="_blank">
                   <CgWebsite />
                   Demo
                 </a>
                 <a
-                  href="https://github.com/N1kos9/CryptoToz"
+                  href="https://github.com/N1kos9/cryptoz"
                   target="_blank"
                   className={Styles.secondLink}
                 >
@@ -102,7 +102,8 @@ function projects() {
             </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
-              <p className={Styles.secondText}>Vite</p>
+              <p className={Styles.secondText}>NextJS</p>
+              <p>Axios</p>
             </div>
             <div className={Styles.nameWork}>
               <h4>Blockchain landpage</h4>
