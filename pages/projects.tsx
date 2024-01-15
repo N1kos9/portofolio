@@ -37,7 +37,7 @@ function projects() {
             </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
-              <p className={Styles.secondText}>Tailwind</p>
+              <p>Tailwind</p>
               <p>Vite</p>
               <p>Framer motion</p>
             </div>
@@ -69,7 +69,7 @@ function projects() {
             </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
-              <p className={Styles.secondText}>Vite</p>
+              <p>Vite</p>
               <p>Aos</p>
             </div>
             <div className={Styles.nameWork}>
@@ -81,8 +81,8 @@ function projects() {
             <div className={Styles.image}>
               <Image
                 src="/cryptoz.png"
-                width={700}
-                height={700}
+                width={900}
+                height={900}
                 alt="cryptoz"
               />
               <div className={Styles.content}>
@@ -102,11 +102,12 @@ function projects() {
             </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
-              <p className={Styles.secondText}>NextJS</p>
+              <p>NextJS</p>
               <p>Axios</p>
+              <p>Framer motion</p>
             </div>
             <div className={Styles.nameWork}>
-              <h4>Blockchain landpage</h4>
+              <h4>Cryptocurrency landpage</h4>
             </div>
           </div>
 
@@ -130,7 +131,7 @@ function projects() {
             </div>
             <div className={Styles.tehnoUsed}>
               <p>React</p>
-              <p className={Styles.secondText}>Tailwind</p>
+              <p>Tailwind</p>
               <p>NextJS</p>
             </div>
             <div className={Styles.nameWork}>
