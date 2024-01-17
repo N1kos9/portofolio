@@ -99,12 +99,9 @@ ul.nav-links li a {
 .nav-item-wrapper:after {
   content: "";
   position: absolute;
-  top: 120px;
   left: -10%;
-  width: 120%;
   height: 100%;
   background: #151515;
-  margin: 0 auto;
 }
 .nav-footer {
   position: absolute;
@@ -164,6 +161,6 @@ ul.nav-links li a {
     transform: translate(50%, 50%);
   }
   .nav-overlay {
-    top: -200%;
+    top: -500%;
   }
 }
