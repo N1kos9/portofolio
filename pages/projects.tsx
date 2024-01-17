@@ -16,12 +16,7 @@ function projects() {
         <div className={Styles.projectSection}>
           <div className={Styles.interContent}>
             <div className={Styles.image}>
-              <Image
-                src="/modern.png"
-                width={1000}
-                height={1000}
-                alt="modern"
-              />
+              <Image src="/modern.png" width={700} height={700} alt="modern" />
               <div className={Styles.content}>
                 <a
                   href="https://landing-page-mocha-tau.vercel.app/"
@@ -54,8 +49,8 @@ function projects() {
             <div className={Styles.image}>
               <Image
                 src="/pizza-store.png"
-                width={1400}
-                height={1400}
+                width={1200}
+                height={1200}
                 alt="swipe"
               />
               <div className={Styles.content}>
@@ -91,7 +86,7 @@ function projects() {
             <div className={Styles.image}>
               <Image
                 src="/cryptoz.png"
-                width={1000}
+                width={700}
                 height={1000}
                 alt="cryptoz"
               />
@@ -121,7 +116,7 @@ function projects() {
           </div>
           <div className={Styles.interContent}>
             <div className={Styles.image}>
-              <Image src="/seos.png" width={1900} height={1000} alt="seos" />
+              <Image src="/seos.png" width={700} height={700} alt="seos" />
               <div className={Styles.content}>
                 <a
                   href="https://seos-one.vercel.app/?vercelToolbarCode=WUYzfN84k-6cw1Q"

@@ -30,6 +30,7 @@
 }
 .interContent img {
   border-radius: 1rem;
+  width: 100%;
 }
 .tehnoUsed {
   display: flex;
@@ -49,6 +50,7 @@
 }
 .image {
   position: relative;
+  width: 100%;
 }
 .content {
   width: 100%;
