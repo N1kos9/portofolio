@@ -16,7 +16,12 @@ function projects() {
         <div className={Styles.projectSection}>
           <div className={Styles.interContent}>
             <div className={Styles.image}>
-              <Image src="/modern.png" width={700} height={700} alt="modern" />
+              <Image
+                src="/modern.png"
+                width={1000}
+                height={1000}
+                alt="modern"
+              />
               <div className={Styles.content}>
                 <a
                   href="https://landing-page-mocha-tau.vercel.app/"
@@ -36,7 +41,6 @@ function projects() {
               </div>
             </div>
             <div className={Styles.tehnoUsed}>
-              <p>React</p>
               <p>Tailwind</p>
               <p>Vite</p>
               <p>Framer motion</p>
@@ -48,7 +52,76 @@ function projects() {
 
           <div className={Styles.interContent}>
             <div className={Styles.image}>
-              <Image src="/seos.png" width={700} height={700} alt="seos" />
+              <Image
+                src="/pizza-store.png"
+                width={1400}
+                height={1400}
+                alt="swipe"
+              />
+              <div className={Styles.content}>
+                <a
+                  href="https://first-solution-adji.vercel.app"
+                  target="_blank"
+                >
+                  <CgWebsite />
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/N1kos9/swipe"
+                  target="_blank"
+                  className={Styles.secondLink}
+                >
+                  <FaCode />
+                  Code
+                </a>
+              </div>
+            </div>
+            <div className={Styles.tehnoUsed}>
+              <p>NextJS</p>
+              <p>Strapi</p>
+              <p>Axios</p>
+              <p>Framer motion</p>
+            </div>
+            <div className={Styles.nameWork}>
+              <h4>Ecommerce pizza store</h4>
+            </div>
+          </div>
+
+          <div className={Styles.interContent}>
+            <div className={Styles.image}>
+              <Image
+                src="/cryptoz.png"
+                width={1000}
+                height={1000}
+                alt="cryptoz"
+              />
+              <div className={Styles.content}>
+                <a href="https://cryptoz-psi.vercel.app" target="_blank">
+                  <CgWebsite />
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/N1kos9/cryptoz"
+                  target="_blank"
+                  className={Styles.secondLink}
+                >
+                  <FaCode />
+                  Code
+                </a>
+              </div>
+            </div>
+            <div className={Styles.tehnoUsed}>
+              <p>NextJS</p>
+              <p>Axios</p>
+              <p>Framer motion</p>
+            </div>
+            <div className={Styles.nameWork}>
+              <h4>Cryptocurrency landpage</h4>
+            </div>
+          </div>
+          <div className={Styles.interContent}>
+            <div className={Styles.image}>
+              <Image src="/seos.png" width={1900} height={1000} alt="seos" />
               <div className={Styles.content}>
                 <a
                   href="https://seos-one.vercel.app/?vercelToolbarCode=WUYzfN84k-6cw1Q"
@@ -68,74 +141,11 @@ function projects() {
               </div>
             </div>
             <div className={Styles.tehnoUsed}>
-              <p>React</p>
               <p>Vite</p>
               <p>Aos</p>
             </div>
             <div className={Styles.nameWork}>
               <h4>Multi service place</h4>
-            </div>
-          </div>
-
-          <div className={Styles.interContent}>
-            <div className={Styles.image}>
-              <Image
-                src="/cryptoz.png"
-                width={900}
-                height={900}
-                alt="cryptoz"
-              />
-              <div className={Styles.content}>
-                <a href="https://cryptoz-psi.vercel.app" target="_blank">
-                  <CgWebsite />
-                  Demo
-                </a>
-                <a
-                  href="https://github.com/N1kos9/cryptoz"
-                  target="_blank"
-                  className={Styles.secondLink}
-                >
-                  <FaCode />
-                  Code
-                </a>
-              </div>
-            </div>
-            <div className={Styles.tehnoUsed}>
-              <p>React</p>
-              <p>NextJS</p>
-              <p>Axios</p>
-              <p>Framer motion</p>
-            </div>
-            <div className={Styles.nameWork}>
-              <h4>Cryptocurrency landpage</h4>
-            </div>
-          </div>
-
-          <div className={Styles.interContent}>
-            <div className={Styles.image}>
-              <Image src="/swipe.png" width={700} height={700} alt="swipe" />
-              <div className={Styles.content}>
-                <a href="https://swipe-tau.vercel.app/" target="_blank">
-                  <CgWebsite />
-                  Demo
-                </a>
-                <a
-                  href="https://github.com/N1kos9/swipe"
-                  target="_blank"
-                  className={Styles.secondLink}
-                >
-                  <FaCode />
-                  Code
-                </a>
-              </div>
-            </div>
-            <div className={Styles.tehnoUsed}>
-              <p>React</p>
-              <p>Tailwind</p>
-              <p>NextJS</p>
-            </div>
-            <div className={Styles.nameWork}>
-              <h4>One page, classified as Swipe</h4>
             </div>
           </div>
         </div>
