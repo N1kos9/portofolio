@@ -34,7 +34,7 @@ function About() {
               </div>
               <div className="three">
                 <p>2</p>
-                <h2>react-three-fiber</h2>
+                <h2>react-three-fiber/spline</h2>
                 <h3>
                   Use it for most of the 3d part, great functionality and easy
                   to understand
