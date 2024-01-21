@@ -22,7 +22,7 @@ function Contact() {
                 github
               </a>
               <a
-                href="https://www.linkedin.com/in/nikos-m-631366284/"
+                href="https://www.linkedin.com/in/murariu-nikos-631366284/"
                 target="_blank"
               >
                 linkedin
