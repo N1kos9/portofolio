@@ -2,7 +2,6 @@ import Page from "@/component/page";
 import Circular from "./items/circular";
 import styles from "@/pages/styles/index.module.css";
 import Link from "next/link";
-
 import Image from "next/image";
 import RingImage from "@/public/ringg.webp";
 

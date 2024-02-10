@@ -1,6 +1,6 @@
 import Header from "./header";
 import Head from "next/head";
-
+import { CustomCursor } from "cursor-style";
 export default function Page({ children }: React.PropsWithChildren) {
   return (
     <>
@@ -20,6 +20,7 @@ export default function Page({ children }: React.PropsWithChildren) {
         </Head>
         <Header />
         {children}
+        <CustomCursor type="one" />
       </main>
     </>
   );
