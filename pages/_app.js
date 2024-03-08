@@ -1,70 +1,81 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "@/pages/styles/index.css";
-import gsap from "gsap";
+import { gsap, Expo } from "gsap";
 import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
+import styles from "./styles/loader.module.css";
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
 
-  const load = gsap.timeline({
-    paused: "true",
-  });
-  let loader = useRef(null);
-  let progress = useRef(null);
-  let percent = useRef(null);
-  let bar = useRef(null);
-  let barc = useRef(null);
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    load.to([percent, bar], {
-      duration: 0.2,
-      opacity: 0,
-      zIndex: -1,
-    });
-    load.to(progress, {
-      duration: 0.8,
-      width: "0%",
-    });
-    load.to(
-      loader,
-      {
-        duration: 1.5,
-        y: "-150%",
+    const count = setInterval(() => {
+      setCounter((counter) => {
+        if (counter < 100) {
+          return counter + 1;
+        } else {
+          clearInterval(count);
+          reveal();
+          return 100;
+        }
+      });
+    }, 25);
+    return () => clearInterval(count);
+  }, []);
+
+  const reveal = () => {
+    const t1 = gsap.timeline({
+      onComplete: () => {
+        console.log("completed");
       },
-      "-=.2"
+    });
+
+    t1.to("." + styles.follow, {
+      width: "100%",
+      ease: Expo.easeInOut,
+      duration: 1.2,
+      delay: 0.7,
+    })
+      .to("." + styles.hide, { opacity: 0, duration: 0.3 })
+      .to("." + styles.hide, { display: "none", duration: 0.3 })
+      .to("." + styles.follow, {
+        height: "100%",
+        ease: Expo.easeInOut,
+        duration: 0.7,
+        delay: 0.5,
+      });
+
+    const words = document.querySelectorAll(
+      "." + styles.welcomeText.split(" ")
     );
-    load.to("container", {
-      skewY: 10,
-      opacity: 1,
-      y: "10%",
-      stagger: {
-        amount: 0.4,
-      },
+    words.forEach((word, index) => {
+      t1.to(word, {
+        opacity: 1,
+        duration: 0.5,
+        delay: index * 0.5,
+      });
     });
-  }, [percent, bar, progress, loader, barc, load]);
 
-  var id;
-  var width1 = 1;
-
-  function loading() {
-    id = setInterval(frame, 20);
-  }
-  function frame() {
-    if (width1 >= 100) {
-      clearInterval(id);
-      load.play();
-    } else {
-      width1++;
-      if (typeof document !== "undefined") {
-        document.getElementById("barc").style.width = width1 + "%";
-        document.getElementById("percent").innerHTML = width1 + "%";
-      }
-    }
-  }
-
-  loading();
-
+    t1.to("." + styles.loading, {
+      background: "transparent",
+      duration: 0,
+    })
+      .to("." + styles.follow, {
+        x: "100%",
+        ease: Expo.easeInOut,
+        duration: 0.7,
+      })
+      .to("." + styles.follow, { display: "none", duration: 0 })
+      .to("." + styles.loading, {
+        display: "none",
+        duration: 0,
+      });
+    t1.to("." + styles.appContainer, {
+      display: "none",
+    });
+  };
   return (
     <>
       <AnimatePresence mode="wait">
@@ -77,26 +88,92 @@ const App = ({ Component, pageProps }) => {
             animate={{ scaleY: 0 }}
             exit={{ scaleY: 1 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          ></motion.div>
+          >
+            <div className="loader-container">
+              <svg className="loader-svg" viewBox="0 0 100 100">
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style={{ stopColor: "#333", stopOpacity: 1 }}
+                    />
+                    <stop
+                      offset="100%"
+                      style={{ stopColor: "#000", stopOpacity: 1 }}
+                    />
+                  </linearGradient>
+                </defs>
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  stroke="url(#gradient)"
+                  strokeWidth="4"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
+          </motion.div>
           <motion.div
             className="slide-out"
             initial={{ scaleY: 1 }}
             animate={{ scaleY: 0 }}
             exit={{ scaleY: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          ></motion.div>
+          >
+            <div className="loader-container">
+              <svg className="loader-svg" viewBox="0 0 100 100">
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style={{ stopColor: "#333", stopOpacity: 1 }}
+                    />
+                    <stop
+                      offset="100%"
+                      style={{ stopColor: "#000", stopOpacity: 1 }}
+                    />
+                  </linearGradient>
+                </defs>
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  stroke="url(#gradient)"
+                  strokeWidth="4"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
+          </motion.div>
         </motion.div>
       </AnimatePresence>
 
       <div>
-        <div className="loader" ref={(el) => (loader = el)}>
-          <div className="progress" ref={(el) => (progress = el)}>
-            <div id="percent" ref={(el) => (percent = el)}>
-              1%
+        <div className={styles.appContainer}>
+          <div className={styles.loading}>
+            <div className={styles.follow}>
+              <h1 className={styles.welcomeText}>Welcome to My Portfolio</h1>
             </div>
-            <div id="bar" ref={(el) => (bar = el)}>
-              <div id="barc" ref={(el) => (barc = el)}></div>
-            </div>
+            <div
+              className={`${styles.hide} ${styles.progressBar}`}
+              style={{ width: counter + "%" }}
+            ></div>
+            <p className={`${styles.hide} ${styles.count}`}>{counter}%</p>
           </div>
         </div>
       </div>
