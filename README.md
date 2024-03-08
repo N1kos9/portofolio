@@ -1,4 +1,4 @@
-# Nikos Murariu's Portfolio - A Next.js Project
+# Portfolio - A Next.js Project
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), showcasing the professional portfolio of Nikos Murariu, a front-end developer specializing in creating engaging digital experiences.
 
