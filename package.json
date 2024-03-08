@@ -19,7 +19,7 @@
     "@zeit/next-css": "^1.0.1",
     "animejs": "^3.2.2",
     "boxicons": "^2.1.4",
-    "cursor-style": "^1.1.21",
+    "cursor-style": "^1.3.3",
     "eslint": "8.45.0",
     "eslint-config-next": "^14.0.4",
     "framer-motion": "^10.16.1",
