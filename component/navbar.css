@@ -17,7 +17,8 @@
 }
 .nav-overlay {
   position: fixed;
-  background: #151515;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(13px);
   z-index: -2;
   top: -100%;
   left: 0;
@@ -103,7 +104,9 @@ ul.nav-links li a {
   left: -10%;
   width: 120%;
   height: 100%;
-  background: #151515;
+  background: rgba(0, 0, 0, 0); /* Start fully transparent */
+  opacity: 0; /* Start fully transparent */
+  transition: all 2s ease-in-out;
 }
 .nav-footer {
   position: absolute;

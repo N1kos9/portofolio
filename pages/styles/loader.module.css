@@ -1,0 +1,81 @@
+.appContainer {
+  width: 100vw;
+  height: 100vh;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: #000000;
+  z-index: 999;
+}
+
+.follow {
+  position: absolute;
+  background-color: #ffffff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.progressBar {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: 0.4s ease-out;
+}
+
+.count {
+  position: absolute;
+  font-size: 5vw;
+  color: #fff;
+  transform: translateY(-15px);
+  font-weight: 500;
+}
+
+.titleLines {
+  text-align: center;
+  font-size: 6vw;
+  opacity: 0;
+  display: none;
+  font-weight: 500;
+  margin: 0;
+}
+
+.welcomeText {
+  font-size: 4rem;
+  color: black;
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .count {
+    font-size: 10vw;
+  }
+
+  .titleLines {
+    font-size: 8vw;
+  }
+
+  .welcomeText {
+    font-size: 2rem;
+  }
+}

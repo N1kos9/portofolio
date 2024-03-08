@@ -34,6 +34,7 @@ function Header() {
                   style={{
                     top: navOpen ? "0" : "120px",
                     transitionDelay: navOpen ? "0.8s" : "0s",
+                    opacity: navOpen ? "1" : "0",
                   }}
                 >
                   Home
@@ -47,6 +48,7 @@ function Header() {
                   style={{
                     top: navOpen ? "0" : "120px",
                     transitionDelay: navOpen ? "0.9s" : "0s",
+                    opacity: navOpen ? "1" : "0",
                   }}
                 >
                   About
@@ -60,6 +62,7 @@ function Header() {
                   style={{
                     top: navOpen ? "0" : "120px",
                     transitionDelay: navOpen ? "1.1s" : "0s",
+                    opacity: navOpen ? "1" : "0",
                   }}
                 >
                   Projects
@@ -73,6 +76,7 @@ function Header() {
                   style={{
                     top: navOpen ? "0" : "120px",
                     transitionDelay: navOpen ? "1.2s" : "0s",
+                    opacity: navOpen ? "1" : "0",
                   }}
                 >
                   Contact
