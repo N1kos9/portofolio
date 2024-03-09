@@ -5,7 +5,7 @@
   font-size: 2rem;
   color: white;
   font-weight: 500;
-  padding-top: 7rem;
+  margin-top: 7rem;
   opacity: 0.9;
 }
 .projects h3 {
@@ -72,6 +72,7 @@
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
+
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -106,11 +107,20 @@
   .tehnoUsed {
     justify-content: center;
   }
+  .tehnoUsed p {
+    background-color: rgba(34, 34, 34, 0.212);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+  }
   .nameWork {
     text-align: center;
   }
   .content {
     margin-top: 1rem;
+    position: initial;
+    display: initial;
+    justify-content: initial;
+    align-items: initial;
+    justify-content: center;
     opacity: 1;
   }
   .content a {
@@ -122,13 +132,7 @@
     font-size: 1rem;
     margin-bottom: 0;
   }
-  .interContent img {
-    border: 1px solid white;
-  }
-  .tehnoUsed p {
-    background-color: rgba(34, 34, 34, 0.212);
-    border: 1px solid rgba(255, 255, 255, 0.11);
-  }
+
   .secondLink {
     margin-left: 0;
   }
