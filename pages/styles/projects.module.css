@@ -5,7 +5,7 @@
   font-size: 2rem;
   color: white;
   font-weight: 500;
-  padding-top: 7rem;
+  margin-top: 7rem;
   opacity: 0.9;
 }
 .projects h3 {
@@ -111,23 +111,20 @@
   }
   .content {
     margin-top: 1rem;
+    position: initial;
+    display: initial;
+    justify-content: initial;
+    align-items: initial;
+    justify-content: center;
     opacity: 1;
   }
   .content a {
-    background-color: rgba(34, 34, 34, 0.212);
-    border: 1px solid rgba(255, 255, 255, 0.11);
+    background-color: rgba(47, 47, 47, 0.588);
     border-radius: 0.5rem;
     padding: 0.3rem 0 0.3rem 0;
     margin-top: 0.5rem;
     font-size: 1rem;
     margin-bottom: 0;
-  }
-  .interContent img {
-    border: 1px solid white;
-  }
-  .tehnoUsed p {
-    background-color: rgba(34, 34, 34, 0.212);
-    border: 1px solid rgba(255, 255, 255, 0.11);
   }
   .secondLink {
     margin-left: 0;

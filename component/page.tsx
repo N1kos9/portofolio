@@ -1,8 +1,16 @@
 import Header from "./header";
 import Head from "next/head";
 import { CursorOne } from "cursor-style";
+import { isMobile } from "./utils/isMobile";
+import React, { useEffect, useState } from "react";
 
 export default function Page({ children }: React.PropsWithChildren<{}>) {
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
+
+  useEffect(() => {
+    setIsMobileDevice(isMobile());
+  }, []);
+
   return (
     <>
       <Head>
@@ -24,7 +32,7 @@ export default function Page({ children }: React.PropsWithChildren<{}>) {
         />
         <meta
           property="og:description"
-          content="Explore the portfolio of Nikos Murariu, where creativity meets functionality in web development."
+          content="Explore the my portofolio, where creativity meets functionality in web development."
         />
         <meta
           property="og:image"
@@ -40,7 +48,7 @@ export default function Page({ children }: React.PropsWithChildren<{}>) {
         />
         <meta
           property="twitter:description"
-          content="Explore the portfolio of Nikos Murariu, where creativity meets functionality in web development."
+          content="Explore the my portofolio, where creativity meets functionality in web development."
         />
         <meta
           property="twitter:image"
@@ -76,7 +84,7 @@ export default function Page({ children }: React.PropsWithChildren<{}>) {
       <main>
         <Header />
         {children}
-        <CursorOne delay={8} />
+        {!isMobileDevice && <CursorOne delay={8} />}
       </main>
     </>
   );

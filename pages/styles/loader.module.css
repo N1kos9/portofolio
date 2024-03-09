@@ -2,7 +2,8 @@
   width: 100vw;
   height: 100vh;
   color: #000000;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   overflow-y: hidden;
   overflow-x: hidden;
