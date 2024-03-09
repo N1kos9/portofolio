@@ -14,10 +14,13 @@
 }
 .menu-toggle {
   cursor: pointer;
+  border-radius: 50%;
+  background: #ffffff09;
+  backdrop-filter: blur(5px);
 }
 .nav-overlay {
   position: fixed;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(13px);
   z-index: -2;
   top: -100%;
