@@ -176,8 +176,15 @@ circle {
   .email {
     margin-top: 0;
   }
+  .name input {
+    padding: 1.5rem 4rem;
+  }
+  .email input {
+    padding: 1.5rem 4rem;
+  }
   .send {
     margin-top: 2rem;
+    padding: 1.5rem 4rem;
   }
   .error-btn {
     text-align: center;
