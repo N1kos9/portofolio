@@ -11,7 +11,7 @@ function About() {
           <div className={aboutStyles.aboutText}>
             <div className={aboutStyles.name}>
               <h1>
-                Murariu <br /> Nikos
+                Nikos
               </h1>
             </div>
             <div className={aboutStyles.sideText}>
