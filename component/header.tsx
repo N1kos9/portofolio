@@ -111,7 +111,7 @@ function Header() {
                   </li>
                   <li>
                     <a
-                      href="https://www.linkedin.com/in/murariu-nikos-631366284/"
+                      href="https://www.linkedin.com/in/murariu-nikos-63136628"
                       style={{
                         bottom: navOpen ? "0" : "-20px",
                         opacity: navOpen ? "1" : "0",
